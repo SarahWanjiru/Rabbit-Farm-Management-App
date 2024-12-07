@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database files
+*.db
+
+# Environment variables and secrets
+.env
+
+# VSCode settings
+.vscode/
+
+# Python virtual environment
+venv/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# PyCharm project files (if applicable)
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python coverage reports
+.coverage
+*.cover
