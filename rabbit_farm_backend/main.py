@@ -1,10 +1,15 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from routes import rabbits  # Import the router from the 'routes/rabbits.py' file
 from database.db import Base, engine  # Import SQLAlchemy Base and engine
 from sqlalchemy.orm import Session
 
 app = FastAPI()
+
+# Mount the 'static' directory to serve static files
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
